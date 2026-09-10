@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Roboto", sans-serif;
+  
+  --color-guardian-blue: #005689;
+  --color-guardian-red: #c70000;
+  --color-brand-blue: #005689;
+  --color-brand-red: #c70000;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-[#222] bg-white;
+  }
+}
+
+.guardian-headline {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
